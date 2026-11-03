@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sacred OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="theme-color" content="#ea9318">
+  <meta name="description"
+    content="A Windows 9x inspired operating system written in Vanilla JS where every HTML file is executable." />
+  <meta name="keywords" content="JavaScript, operating system, your browser, retro, Sacred OS, OS, web OS" />
+  <meta name="author" content="Mark Valentino" />
+  <meta property="og:title" content="Sacred OS" />
+  <meta property="og:description"
+    content="A Windows 9x inspired operating system written in Vanilla JS where every HTML file is executable." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sacred.neocities.org" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sacred.neocities.org/sacred_os_screensot.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="outsideTheOS/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="outsideTheOS/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="outsideTheOS/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://sacred.neocities.org/">
+  <link rel="stylesheet" href="outsideTheOS/bios.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sacred OS",
+      "url": "https://sacred.neocities.org/",
+      "logo": "https://sacred.neocities.org/android-chrome-512x512.png",
+      "sameAs": [
+        "https://neocities.org/site/sacred/",
+        "https://github.com/M-Valentino/sacredOS/",
+        "https://mark-valentino.vercel.app/project/Sacred%20OS"
+      ]
+    }
+  </script>
+</head>
+
+<body id="screen">
+  <div id="crtAndBootContainer">
+    <div class="crtborderHighlight">
+      <div class="crtBorder">
+        <div class="innerCrtBorder">
+          <main id="bootScreen">
+            <header class="flexBetween">
+              <h1 id="biosTitle">𓍰 Sacred OS <span style="color:#ff0;">2</span> Boot Menu</h1><button id="help" class="biosButton">Help</button>
+            </header>
+            <div id="helpDialog" class="biosDialog">
+              <p>
+                Sacred OS can boot in three ways: from <b>IndexedDB</b>, from a <b>JSON disk backup</b>, or with a
+                <b>fresh install</b>.
+                If this is your first time using Sacred OS, you will want to boot with a fresh install.
+              </p>
+              <p>Your data is automatically saved to IndexedDB, which allows you to store gigabytes
+                of data. You can boot from IndexedDB to resume where you left off.
+              </p>
+              <p>If you frequently clear your browser's data or want to use Sacred on a different device, You want to
+                boot from a JSON disk backup. JSON disk backups will save your session exactly as how IndexedDB
+                does, but you are able to save it as a file anywhere on your real computer. You can create
+                these backups in the files.html program.
+              </p>
+              <button id="closeHelp" class="biosButton closeDialog">Ok</button>
+            </div>
+            <div id="noIDBDialog" class="biosDialog">
+              <p>No saved session in IndexedDB was found. If this is your first time using Sacred OS,
+                you should boot with a fresh install. Please click the help button for more info.
+              </p>
+              <button id="closeNoIDB" class="biosButton closeDialog">Ok</button>
+            </div>
+            <hr class="biosHrMain mb-20" />
+            <section id="bootOptions">
+              <div class="biosTextMain">Choose a boot source:</div>
+              <button id="indexedDB" class="biosButton mt-20 mr-20">IndexedDB (Recommended)</button>
+              <button id="uploadJson" class="biosButton mt-20 mr-20">JSON Disk Backup</button>
+              <input type="file" id="fileInput" style="display:none;">
+              <button id="defaultSettings" class="biosButton mt-20">Fresh install</button>
+              <hr class="biosHrSub mt-20" />
+            </section>
+            <section id="sysChecks">
+              <h2 class="mt-20">System Checks</h2>
+              <div id="screenRes" class="biosTextSub"></div>
+              <div id="screenResWarning" class="warning"></div>
+              <div id="inputDev" class="biosTextSub"></div>
+              <div id="inputDevWarning" class="warning"></div>
+              <div id="CPU" class="biosTextSub"></div>
+              <div id="CPUWarning" class="warning"></div>
+              <div id="language" class="biosTextSub"></div>
+              <div id="languageWarning" class="warning"></div>
+              <div id="userAgent" class="biosTextSub"></div>
+              <div id="userAgentWarning" class="warning"></div>
+              <div id="memoryLimit" class="biosTextSub"></div>
+              <div id="memoryLimitWarning" class="warning"></div>
+            </section>
+            <section id="freshInstallInfo">
+              <h2 class="mt-20">Compiling OS From Source:</h2>
+              <div id="compile" class="biosTextSub"></div>
+            </section>
+          </main>
+        </div>
+        <div id="powerButtonContainer">
+          <div id="powerButton" class="powerButtonOn"></div>
+        </div>
+      </div>
+    </div>
+    <div class="crtStandContainer">
+      <div class="standShadow">
+        <div class="crtStand"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="stickyNoteContainer">
+        <div class="stickyNote" onclick="window.location.href='outsideTheOS/about.html'">
+          <div class="stickyNoteText">
+            About
+            <br />
+            Sacred
+          </div>
+        </div>
+      </div>
+      Sacred OS is a Windows 9x inspired operating system written in Vanilla JS where every HTML
+      file is executable. <span class="readMore"><a href="outsideTheOS/about.html">Read More about Sacred
+          here.</a></span> It was created by <a href="https://github.com/M-Valentino/sacredOS">Mark
+        Valentino in 2024.</a>
+      <br />
+      <a href="https://github.com/M-Valentino/sacredOS/" target="_blank" rel="noopener noreferrer">Source Code</a> ~
+      licensed under GPL-2.0
+
+      <div class="eighty8x31Row">
+        <a href="https://neocities.org/site/sacred" target="_blank" rel="noopener noreferrer">
+          <img src="outsideTheOS/88x31/neocities_button.gif" width="88" height="31" alt="Neocities 88x31 button" /></a>
+        <img src="outsideTheOS/88x31/bbb_unacredited.png" width="88" height="32" alt="BBB Unaccredited Business" />
+        <img src="outsideTheOS/88x31/Valid-HTML-5.png" width="88" height="31" alt="W3C Valid HTML 5 Website" />
+        <img src="outsideTheOS/88x31/MadeOn_Mac.gif" width="88" height="31" alt="Made on a Mac" />
+        <a href="https://erikhoudini.com/"><img src="outsideTheOS/88x31/houdininokiabutton.png" width="88" height="31"
+            alt="Erik Houdini's site" /></a>
+        <a href="https://reduxflakes.neocities.org/"><img src="outsideTheOS/88x31/reduxflakes.png" width="88"
+            height="31" alt="ReduxFlakes's site" /></a>
+      </div>
+    </footer>
+  </div>
+  <div id="scanLines"></div>
+  <script src="bios/init.js"></script>
+  <script src="bios/boot.js"></script>
+
+</body>
+
+</html>

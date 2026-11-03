@@ -1,0 +1,36 @@
+{
+  "timeFormat": "12h",
+  "desktopBGPath": "system/desktopBG.png",
+  "desktopBGMode": "stretch",
+  "fontOSPath": "system/system12px.woff2",
+  "fileAssociations": {
+    ".png": "programs/default/imageViewer.html",
+    ".gif": "programs/default/imageViewer.html",
+    ".jpg": "programs/default/imageViewer.html",
+    ".webp": "programs/default/imageViewer.html",
+    ".nes": "programs/default/jsNES/jsNES.html",
+    ".mp3": "programs/default/mediaPlayer.html",
+    ".ogg": "programs/default/mediaPlayer.html",
+    ".wav": "programs/default/mediaPlayer.html",
+    ".mp4": "programs/default/mediaPlayer.html",
+    ".mov": "programs/default/mediaPlayer.html",
+    ".txt": "programs/default/notepad.html"
+  },
+  "fileIcons": {
+    ".png": "system/icons/picture.json",
+    ".gif": "system/icons/picture.json",
+    ".jpg": "system/icons/picture.json",
+    ".webp": "system/icons/picture.json",
+    ".html": "system/icons/executable.json",
+    ".txt": "system/icons/document.json",
+    ".json": "system/icons/document.json",
+    ".js": "system/icons/document.json",
+    ".css": "system/icons/document.json",
+    ".mp3": "system/icons/music.json",
+    ".wav": "system/icons/music.json",
+    ".mp4": "system/icons/movie.json",
+    ".mov": "system/icons/movie.json",
+    ".ogg": "system/icons/movie.json",
+    ".nes": "system/icons/nes.json"
+  }
+}

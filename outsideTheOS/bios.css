@@ -1,0 +1,391 @@
+:root {
+  --powerBttnTxtOutline: -0.5px -0.5px 0 #ded8bd, 0.5px -0.5px 0 #ded8bd, -0.5px 0.5px 0 #ded8bd, 0.5px 0.5px 0 #ded8bd;
+}
+
+@font-face { 
+  font-family: "symbol";
+  src: url(data:application/octet-stream;base64,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);
+}
+
+#crtAndBootContainer {
+  margin: auto;
+  width: fit-content;
+}
+
+.stickyNoteContainer {
+  position: relative;
+  transform: translateY(-220px);
+  filter: drop-shadow(-1px 0 0.375px #00000020);
+  height: 0;
+}
+
+.stickyNote {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  background:
+    linear-gradient(45deg, #00000048 0%, #00000024 25%, #00000000 100%),
+    linear-gradient(120deg, #00000000 0%, #00000015 7%, #00000000 10%, #00000000 64%, #ffffff 86%, #ffffff 100%),
+    #fffb82fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: path("M 1.5,17.6 C 19.0,12.5 42.6,9.4 42.6,9.4 L 114.0,0.0 L 122.7,58.1 C 122.7,58.1 125.3,80.9 135.2,97.1 C 116.3,120.0 72.2,123.9 72.2,123.9 L 14.2,131.6 L 0.0,32.2 C 0.0,32.2 -1.1,22.6 1.5,17.6 z");
+}
+
+.stickyNoteText {
+  font-family: cursive;
+  color: #101010a0;
+  transform: rotate(-14deg) translate(-8px, -10px);
+  font-size: 20px;
+}
+
+.crtborderHighlight {
+  background: linear-gradient(35deg, #b9b39c 10%, #fffef8 70%, #fffffe 100%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px 1.5px #ded8bd40;
+  padding: 3px;
+  width: fit-content;
+}
+
+.crtBorder {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  background: linear-gradient(45deg, #ded8bd 0%, #fffae2 100%);
+  border-radius: 8px;
+  box-shadow: -0.5px 0.5px 0 1px #ded8bd60;
+  width: calc((70vh + 120px * 1.25));
+}
+
+.innerCrtBorder {
+  border: inset #b9b39c;
+  border-width: 2px 8px 2px 8px;
+  border-radius: 2px;
+}
+
+#scanLines {
+  z-index: 3;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  /* 16px accounts for the left and right side of innerCrtBorder */
+  width: calc((70vh + 120px * 1.25) - 16px);
+  /* Center  horizontally */
+  margin-left: calc(-0.5 * ((70vh + 120px * 1.25) - 16px));
+  height: calc(70vh + 30px);
+  background-image: linear-gradient(0deg, transparent 25%, #00000030 25%, #00000030 50%, transparent 50%, transparent 75%, #00000030 75%, #00000030 100%);
+  background-size: 4px 4px;
+  pointer-events: none;
+}
+
+.crtStand {
+  height: 80px;
+  width: 600px;
+  margin: auto;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background: linear-gradient(90deg, #787466 0%, #999481 4%, #b9b39c 40%, #cbc6af 50%, #b9b39c 60%, #999481 96%, #787466 100%);
+  box-shadow: inset 0 10px 11px 2px #00000047, inset 0 5px 11px 1px #00000020;
+}
+
+.crtStandContainer {
+  background: linear-gradient(0deg, #b3ae97 0%, #b3ae97 14.2%, #e9e4ca 15%, #a39e8a 15.8%, #555349 62%, #000000 100%);
+  margin: auto;
+  width: 750px;
+  height: 115px;
+  box-shadow: inset 0 0 2px 0 #000000a6;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.standShadow {
+  height: 97px;
+  width: 100%;
+  background: radial-gradient(#00000066 0%, #00000000 60%, #00000000 100%);
+}
+
+#powerButtonContainer {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#powerButton {
+  font-family: "symbol";
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #787466 0%, #666254 100%);
+  border: 1px solid #787466;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+#powerButton::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 39px;
+  height: 39px;
+  background: radial-gradient(circle, #f2eecf 0%, #ece7c9 40%, #dfdccc 100%);
+  border-radius: 50%;
+  box-shadow: inset 1px -1px 1px 0 #0000005a, inset -1px 1px 5px 0 #ffffffbf;
+  content: '\E800';
+  text-align: center;
+  line-height: 39px;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.powerButtonOn {
+  box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #000, 0 0 2px #000;
+  color: #f8b84b;
+  text-shadow: var(--powerBttnTxtOutline), 2px 1px 4px #f8b84b99;
+}
+
+.powerButtonOff {
+  color: #706e69;
+  box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #666, 0 0 4px #000;
+  text-shadow: var(--powerBttnTxtOutline);
+}
+
+#screen {
+  background-color: #000;
+}
+
+.biosDialog {
+  display: none;
+  position: absolute;
+  top: 150px;
+  color: #fff;
+  background-color: #00c;
+  border: 6px solid #fff;
+  border-style: double;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 20px 20px #000;
+}
+
+@media only screen and (min-width:680px) {
+  .biosDialog {
+    padding: 20px;
+    width: 600px;
+    left: calc(50% - 335px);
+  }
+}
+
+@media only screen and (max-width:679px) {
+  .biosDialog {
+    padding: 16px;
+    width: unset;
+    left: 0;
+  }
+}
+
+.biosDialog a {
+  text-decoration: none;
+  color: #ff0;
+}
+
+#bootScreen {
+  margin: auto;
+  /* max-width: 1024px; */
+  height: 70vh;
+  background-color: #00c;
+  padding: 16px;
+  overflow: hidden;
+  border: 4px solid #000;
+  box-shadow: inset 3px -3.5px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 3px 0 rgba(0, 0, 0, 0.96);
+}
+
+.biosButton {
+  background-color: transparent;
+  border: 4px solid #ff0;
+  border-style: double;
+  font-size: 16px;
+  padding: 3px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1px;
+  height: fit-content;
+  min-width: 70px;
+}
+
+.biosTextMain {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.biosTextSub {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e7e7e7;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.closeDialog {
+  display: block;
+  margin: auto;
+}
+
+.warning {
+  font-size: 17px;
+  margin-top: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff0000;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+#biosTitle {
+  margin-top: -8px;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.biosHrMain {
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+}
+
+.biosHrSub {
+  border: 2px solid #fff;
+}
+
+.flexBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#freshInstallInfo {
+  display: none;
+}
+
+.readMore {
+  display: none;
+}
+
+footer {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  color: #e7e7e7;
+  text-align: center;
+  word-wrap: break-word;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer img {
+  image-rendering: pixelated;
+}
+
+.eighty8x31Row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width:1023px),
+screen and (max-height: 780px) {
+  .crtBorder {
+    padding: 0;
+    background-color: #000;
+    width: unset;
+    box-shadow: unset;
+  }
+
+  .crtborderHighlight {
+    background: #000;
+    border-radius: unset;
+    padding: 0;
+  }
+
+  .innerCrtBorder {
+    border: unset;
+  }
+
+  .stickyNoteContainer,
+  #powerButtonContainer,
+  #powerButton,
+  .crtStand,
+  .crtStandContainer,
+  .standShadow,
+  #scanLines {
+    display: none;
+  }
+
+  .readMore {
+    display: inline;
+  }
+
+  #bootScreen {
+    height: unset;
+    min-height: 90vh;
+    box-shadow: unset;
+  }
+
+  footer {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width:584px) {
+  .eighty8x31Row {
+    display: block;
+  }
+}
+
+@media only screen and (max-height:840px) {
+  .biosTextSub {
+    font-size: 15px;
+  }
+
+  .biosHrMain {
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-style: double;
+  }
+
+  #biosTitle {
+    font-size: 38px;
+  }
+
+  .biosTextMain {
+    font-size: 17px;
+  }
+}
