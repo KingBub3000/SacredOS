@@ -20,6 +20,10 @@ concurrency: # prevent concurrent deploys doing strange things
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    # Explicitly grant write access to push to the gh-pages branch
+    permissions:
+      contents: write
 
     steps:
     - uses: actions/checkout@v3
