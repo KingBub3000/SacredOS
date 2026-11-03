@@ -42,10 +42,10 @@
 <body>
   <div class="navContainer">
     <button class="oSButton osElemBase" onclick="changeSite(true)">🏠</button>
-    <input id="urlInput" type="text" value="" placeholder="https://nyahoo.neocities.org" />
+    <input id="urlInput" type="text" value="" placeholder="https://www.google.com/webhp?igu=1" />
     <button class="oSButton osElemBase" onclick="changeSite()">Go</button>
   </div>
-  <iframe id="siteContent" src="https://nyahoo.neocities.org" width="720" height="600"></iframe>
+  <iframe id="siteContent" src="https://www.google.com/webhp?igu=1" width="720" height="600"></iframe>
 
   <script>
     function changeSite(goToHome) {
@@ -57,7 +57,7 @@
       const newIframe = document.createElement('iframe');
       newIframe.id = 'siteContent';
       if (goToHome) {
-        newIframe.src = "https://nyahoo.neocities.org";
+        newIframe.src = "https://www.google.com/webhp?igu=1";
       } else {
         newIframe.src = urlInput;
       }
